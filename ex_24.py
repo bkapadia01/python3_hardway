@@ -24,12 +24,11 @@ def secret_formula(started):
 
 start_point = 10000
 beans, jars, crates = secret_formula(start_point)
-
 print("with a starting point of: {}".format(start_point))
-
 print(f"we'd have {beans} beans, {jars} jars and {crates} crates.")
 
 start_point = start_point/100
 print("we can also do it this way")
+
 formula = secret_formula(start_point)
 print("we'd have {} beans, {}, jars and {} crates)".format(*formula))
