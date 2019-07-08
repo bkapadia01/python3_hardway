@@ -28,8 +28,8 @@ def print_first_and_last(sentence):
     print_first_words(word)
     print_last_words(word)
 
-def print_first_last_sorted(sentence):
+def print_first_last_sorted(sentences):
     """sort the sentence and print the first and last one."""
-    words = sort_sentence(sentence)
+    words = sort_sentence(sentences)
     print_first_words(words)
     print_last_words(words)
