@@ -6,7 +6,7 @@ class Song(object):
         for line in self.singing:
             print(line)
 
-
+## this is an insstance of the class Song()
 happy_bday = Song(["happy bdayto you",
                    "i dont want to get sued",
                    "so i'll stop here"])
@@ -16,9 +16,13 @@ bulls_parade = Song(["they rally aorund the family",
 
 happy_bday.sing_song()
 bulls_parade.sing_song()
+happy_bday.sing_song()
+
 print("-" * 20)
 # ------ # ----- #
 ## adv. of above is that you can call the song by calling the sing_song function, below you'll have to write the song each time
+# not able to call lyrics again in the below function, 
+# the first function 
 class Song(object):
     def __init__(self, lyrics):
         for line in lyrics:
@@ -31,4 +35,3 @@ happy_bday = Song(["happy bday to you",
 
 bulls_parade = Song(["before i lose my mind ",
                      "lose my mind again"])
-
