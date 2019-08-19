@@ -27,7 +27,7 @@ class Child(object):
 
 son = Child()
 
-son.implicit()ls
+son.implicit()pip
 son.override()
 son.altered()
 son.other.override()
