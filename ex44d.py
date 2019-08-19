@@ -1,0 +1,34 @@
+#implicit inheritace
+
+class Parent(object):
+    
+    def override(self):
+        print("Parent overide()")
+    
+    def implicit(self):
+        print("parent implicit()")
+
+    def altered(self):
+        print ("parent altered()")
+
+class Child(Parent):
+    
+    def overide(self):
+        print("child override()")
+
+    def altered(self):
+        print("child, before parent altered()")
+        super(Child, self).altered()
+        print("child, after parent altered")
+
+dad = Parent()
+son = Child()
+
+dad.implicit()
+son.implicit()
+
+dad.override()
+son.override()
+
+dad.altered()
+son.altered()
